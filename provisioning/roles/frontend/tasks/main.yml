@@ -3,8 +3,8 @@
   become: no
   tags: deploy
 
-- name: yarn install (this takes some time)
-  local_action: command yarn install --force chdir={{ frontend_temp_path }}
+- name: npm install (this takes some time)
+  local_action: command npm install --force chdir={{ frontend_temp_path }}
   become: no
   tags: deploy
 

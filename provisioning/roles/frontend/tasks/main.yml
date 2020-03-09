@@ -21,5 +21,5 @@
 
 - name: copy files to the server
   copy: src={{ frontend_temp_path }}/{{ frontend_build_directory }}/ dest={{ frontend_path }}
-  when: buildexists|success
+  when: buildexists is succeeded
   tags: deploy
